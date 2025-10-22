@@ -1,0 +1,13 @@
+# Tank-only dataset configuration
+# Paths relative to this YAML file
+
+train: train/images
+val: valid/images
+test: test/images
+
+# Number of classes
+nc: 1
+
+# Class names
+names:
+  0: Tank

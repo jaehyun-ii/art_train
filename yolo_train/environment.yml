@@ -1,0 +1,48 @@
+name: yolo_train
+channels:
+  - pytorch
+  - conda-forge
+  - defaults
+dependencies:
+  # Core Deep Learning Frameworks
+  - python>=3.8
+  - pytorch>=2.0.0
+  - torchvision>=0.15.0
+
+  # Computer Vision and Image Processing
+  - opencv>=4.8.0
+  - pillow>=10.0.0
+
+  # Data Science and Numerical Computing
+  - numpy>=1.24.0
+  - scipy>=1.10.0
+  - pandas>=2.0.0
+
+  # Visualization
+  - matplotlib>=3.7.0
+
+  # Progress Bars
+  - tqdm>=4.65.0
+
+  # YAML Configuration
+  - pyyaml>=6.0
+
+  # HTTP Requests
+  - requests>=2.31.0
+
+  # Jupyter Notebook Support
+  - jupyter>=1.0.0
+  - ipykernel>=6.25.0
+  - notebook>=7.0.0
+
+  # Additional dependencies for ART
+  - scikit-learn>=1.3.0
+  - h5py>=3.9.0
+
+  # Packages available via pip only
+  - pip
+  - pip:
+    # YOLOv8 and Object Detection
+    - ultralytics>=8.0.0
+    # Adversarial Robustness Toolbox
+    - adversarial-robustness-toolbox>=1.15.0
